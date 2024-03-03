@@ -1,0 +1,21 @@
+.background_img_2 {
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/petur_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 0;
+  gap: 24px;
+}
+
+.center_text {
+  padding: 24px 0;
+  font-size: 36px;
+}

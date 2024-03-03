@@ -1,0 +1,53 @@
+.calendar {
+  padding-top: 28px;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+}
+
+td,
+th {
+  position: relative;
+  width: 18px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.ring {
+  position: absolute;
+  top: -28px;
+  left: -21px;
+
+  animation: ring 4s infinite linear;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
